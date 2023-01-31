@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 
-const ImageShow = () => {
-  return <div>ImageShow</div>;
+const ImageShow = ({ image }) => {
+  
+  return (
+    <div>
+      <img src={image.urls.thumb} alt="" />
+    </div>
+  );
 };
 
 export default ImageShow;

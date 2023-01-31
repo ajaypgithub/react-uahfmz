@@ -7,10 +7,10 @@ const SearchImages = async (term) => {
       Authorization: 'Client-ID PF6NIzGIaCMZIRZuxus2xJD4yjNkaV9PX9pSvb5prOw',
     },
     params: {
-      query: 'cars',
+      query: term,
     },
   });
-  return response;
+  return response.data.results;
 };
 
 export default SearchImages;
